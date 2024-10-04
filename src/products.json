@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "name": "Margherita Pizza",
+    "description": "Classic Margherita pizza with mozzarella, tomatoes, and basil.",
+    "price": 13,
+    "imageUrl": "https://example.com/images/margherita_pizza.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Pepperoni Pizza",
+    "description": "Pizza topped with mozzarella and spicy pepperoni slices.",
+    "price": 15,
+    "imageUrl": "https://example.com/images/pepperoni_pizza.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cheeseburger",
+    "description": "Juicy cheeseburger with lettuce, tomato, and pickles.",
+    "price": 10,
+    "imageUrl": "https://example.com/images/cheeseburger.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Chicken Burger",
+    "description": "Crispy chicken burger with lettuce and mayonnaise.",
+    "price": 9,
+    "imageUrl": "https://example.com/images/chicken_burger.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Veggie Burger",
+    "description": "Grilled vegetable patty with fresh salad and tomato.",
+    "price": 8,
+    "imageUrl": "https://example.com/images/veggie_burger.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Grilled Salmon",
+    "description": "Fresh salmon fillet grilled to perfection with herbs.",
+    "price": 20,
+    "imageUrl": "https://example.com/images/grilled_salmon.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Caesar Salad",
+    "description": "Classic Caesar salad with romaine lettuce, croutons, and Parmesan.",
+    "price": 11,
+    "imageUrl": "https://example.com/images/caesar_salad.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Greek Salad",
+    "description": "Salad with cucumbers, tomatoes, olives, feta, and onions.",
+    "price": 10,
+    "imageUrl": "https://example.com/images/greek_salad.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Spaghetti Carbonara",
+    "description": "Creamy carbonara with pancetta and Parmesan cheese.",
+    "price": 12,
+    "imageUrl": "https://example.com/images/spaghetti_carbonara.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Chicken Alfredo",
+    "description": "Pasta with creamy Alfredo sauce and grilled chicken.",
+    "price": 14,
+    "imageUrl": "https://example.com/images/chicken_alfredo.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Tacos",
+    "description": "Three beef tacos with lettuce, cheese, and salsa.",
+    "price": 10,
+    "imageUrl": "https://example.com/images/tacos.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Nachos",
+    "description": "Crispy nachos topped with cheese, jalapeños, and guacamole.",
+    "price": 8,
+    "imageUrl": "https://example.com/images/nachos.jpg"
+  },
+  {
+    "id": 13,
+    "name": "French Fries",
+    "description": "Golden, crispy French fries.",
+    "price": 4,
+    "imageUrl": "https://example.com/images/french_fries.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Onion Rings",
+    "description": "Crispy onion rings served with dipping sauce.",
+    "price": 5,
+    "imageUrl": "https://example.com/images/onion_rings.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Sushi Platter",
+    "description": "Assorted sushi platter with nigiri, sashimi, and rolls.",
+    "price": 22,
+    "imageUrl": "https://example.com/images/sushi_platter.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Pad Thai",
+    "description": "Traditional Pad Thai with shrimp and peanuts.",
+    "price": 13,
+    "imageUrl": "https://example.com/images/pad_thai.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Butter Chicken",
+    "description": "Creamy butter chicken served with basmati rice.",
+    "price": 15,
+    "imageUrl": "https://example.com/images/butter_chicken.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Steak Frites",
+    "description": "Grilled steak served with French fries.",
+    "price": 23,
+    "imageUrl": "https://example.com/images/steak_frites.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Mango Smoothie",
+    "description": "Refreshing mango smoothie.",
+    "price": 5,
+    "imageUrl": "https://example.com/images/mango_smoothie.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Iced Latte",
+    "description": "Cold brewed latte with ice.",
+    "price": 4,
+    "imageUrl": "https://example.com/images/iced_latte.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Fresh Orange Juice",
+    "description": "Freshly squeezed orange juice.",
+    "price": 3,
+    "imageUrl": "https://example.com/images/orange_juice.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Green Tea",
+    "description": "Hot green tea brewed to perfection.",
+    "price": 2,
+    "imageUrl": "https://example.com/images/green_tea.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Cappuccino",
+    "description": "Rich cappuccino with a thick foam layer.",
+    "price": 3,
+    "imageUrl": "https://example.com/images/cappuccino.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Chocolate Milkshake",
+    "description": "Creamy chocolate milkshake with whipped cream.",
+    "price": 5,
+    "imageUrl": "https://example.com/images/chocolate_milkshake.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Blueberry Muffin",
+    "description": "Soft blueberry muffin topped with sugar crystals.",
+    "price": 3,
+    "imageUrl": "https://example.com/images/blueberry_muffin.jpg"
+  }
+]
