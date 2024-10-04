@@ -4,8 +4,10 @@ This is made for Restaurants aiming to provide lightweight menu webpages for phy
 
 Run following commands respectively:
 
-`npm install`
-`npm start` 
+```
+npm install
+npm start
+```
 
 # Screenshots
 
