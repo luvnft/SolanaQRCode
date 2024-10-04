@@ -1,4 +1,66 @@
-/* Basic resets */
+/* Reset button styles */
+.wallet-adapter-button, .wallet-adapter-button-trigger {
+  all: unset; /* Reset all styles */
+  background-color: #1e90ff; /* Default background color */
+  color: white; /* Text color */
+  padding: 12px 20px; /* Padding for button */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin: 10px; /* Margin between buttons */
+}
+
+.wallet-buttons {
+  position: fixed; /* Use absolute positioning */
+  top: 10px; /* Distance from the top */
+  left: 10px; /* Distance from the left */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+
+/* Hover state for the wallet button */
+.wallet-adapter-button:hover, .wallet-adapter-button-trigger:hover {
+  background-color: #007bff; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Disconnect button styles */
+.wallet-disconnect-button {
+  background-color: #dc3545; /* Red for the disconnect button */
+  padding: 12px 20px; /* Padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin: 10px; /* Margin */
+}
+
+/* Hover state for the disconnect button */
+.wallet-disconnect-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.app-container {
+  text-align: center; /* Center-aligns text and elements */
+}
+
+.header {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.logo {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +69,9 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
+  background: linear-gradient(135deg, #f4f7f9 30%, #e9ecef 90%);
   padding: 20px;
+  transition: background-color 0.5s ease;
 }
 
 .app-container {
@@ -18,8 +81,13 @@ body {
 
 header h1 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+  font-size: 2.5rem; /* Increase font size */
+  color: #333; /* Change text color */
+  margin-top: 10px; /* Space above the heading */
+  font-family: 'Arial', sans-serif; /* Change font family */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .product-list {
@@ -31,24 +99,30 @@ header h1 {
 
 .product-item {
   background-color: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .product-img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .product-item h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .product-item p {
@@ -58,60 +132,121 @@ header h1 {
 
 .price {
   font-weight: bold;
+  font-size: 1.2rem;
   color: #1e90ff;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .add-btn {
   background-color: #1e90ff;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 12px 25px;
+  border-radius: 8px;
   font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .add-btn:hover {
-  background-color: #1c7ed6;
+  background-color: #007bff;
+  transform: translateY(-2px);
 }
 
 .cart-container {
-  margin-top: 40px;
+  position: fixed; /* Fixes the position to the viewport */
+  right: 0; /* Positions it to the right */
+  top: 80px; /* Adjust this value as needed to position it below the header */
+  width: 300px; /* Set a width for the cart container */
+  background-color: white; /* Optional: background color for visibility */
+  border: 1px solid #ccc; /* Optional: border for definition */
+  padding: 15px; /* Optional: padding for spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for a nice effect */
+  z-index: 100; /* Ensures it stays on top */
 }
 
-.cart h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.cart-item {
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.cart-item p {
-  font-size: 1.1rem;
-}
 
 .checkout-btn {
   background-color: #28a745;
   color: white;
+  padding: 15px 30px;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 1.2rem;
   cursor: pointer;
-  font-size: 1rem;
-  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto 0;
 }
 
 .checkout-btn:hover {
   background-color: #218838;
 }
 
-@media screen and (max-width: 768px) {
+.cart-item {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.cart-item .product-name {
+    color: #3498db; /* Change to your desired color */
+    font-weight: bold; /* Optional: makes the product name bold */
+}
+
+
+.cart-item p {
+  color: #444;
+}
+
+/* Clear Orders Button Styles */
+.clear-btn {
+  background-color: #9e1919;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.clear-btn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2rem;
+  }
+
   .product-list {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: 1fr;
+  }
+
+  .add-btn,
+  .checkout-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+  }
+
+  .wallet-adapter-button, .wallet-disconnect-button {
+      padding: 10px 15px; /* Reduce padding for smaller screens */
+      font-size: 0.9rem; /* Adjust font size */
   }
 }

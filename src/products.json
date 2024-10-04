@@ -166,12 +166,5 @@
     "description": "Creamy chocolate milkshake with whipped cream.",
     "price": 5,
     "imageUrl": "images/chocolatemilkshake.jpg"
-  },
-  {
-    "id": 25,
-    "name": "Blueberry Muffin",
-    "description": "Soft blueberry muffin topped with sugar crystals.",
-    "price": 3,
-    "imageUrl": "images/blueberrymuffin.jpg"
   }
 ]

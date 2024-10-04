@@ -13,10 +13,8 @@ import { clusterApiUrl } from '@solana/web3.js';
 require('@solana/wallet-adapter-react-ui/styles.css');
 
 export const Wallet = ({ children }) => {
-    // The network can be set to 'devnet', 'testnet', or 'mainnet-beta'.
     const network = WalletAdapterNetwork.Devnet;
 
-    // Custom RPC endpoint can be provided.
     const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
     const wallets = useMemo(
@@ -30,8 +28,10 @@ export const Wallet = ({ children }) => {
         <ConnectionProvider endpoint={endpoint}>
             <WalletProvider wallets={wallets} autoConnect>
                 <WalletModalProvider>
-                    <WalletMultiButton />
-                    <WalletDisconnectButton />
+                    <div className="wallet-buttons">
+                        <WalletMultiButton />
+                        <WalletDisconnectButton />
+                    </div>
                     {children}
                 </WalletModalProvider>
             </WalletProvider>
