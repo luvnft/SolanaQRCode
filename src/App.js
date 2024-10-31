@@ -98,7 +98,7 @@ const App = () => {
     const transaction = new Transaction().add(
       SystemProgram.transfer({
         fromPubkey: wallet.publicKey,
-        toPubkey: new PublicKey("63XcsTWCbYXQRBWw7dHVU496XUGHEbwHi62rrts3HLc3"), // Replace with your receiver's public key
+        toPubkey: new PublicKey("2ZXJpss7EJFjQnvpJUasEiYAHpXk938XyfoLGKsrDMzf"), // Replace with your receiver's public key
         lamports: lamportsToSend,
       })
     );
